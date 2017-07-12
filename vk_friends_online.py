@@ -28,10 +28,8 @@ def get_online_friends(login, password):
 
 
 def output_friends_to_console(friends_online):
-    num = 1
-    for friend in friends_online:
+    for num, friend in enumerate(friends_online, start=1):
         print("{}. {} {}".format(num, friend["first_name"], friend["last_name"]))
-        num += 1
 
 
 if __name__ == '__main__':
